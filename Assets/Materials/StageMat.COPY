@@ -1,0 +1,44 @@
+Begin Object Class=/Script/Engine.Material Name="StageMat"
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=1.000000
+      MaterialExpressionEditorX=-143
+      MaterialExpressionEditorY=241
+      MaterialExpressionGuid=5FDCB9564322ED9A6C2F26A8FE11EAE0
+      Material=Material'"StageMat"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=0.900000
+      MaterialExpressionEditorX=-160
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=413D821F444212CA1EF4B0890E9ED1DC
+      Material=Material'"StageMat"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=0.010754,G=0.006750,B=0.025000,A=1.000000)
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=265B32934441959ABE7634A8D8367DA1
+      Material=Material'"StageMat"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"')
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_1"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(2)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=7A0F88CA423AC3B726F4FBAA7794AF0C
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=4157D7DB483ECFC64D5B698572D7D1AA
+End Object

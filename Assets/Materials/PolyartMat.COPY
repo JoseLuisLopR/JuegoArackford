@@ -1,0 +1,47 @@
+Begin Object Class=/Script/Engine.Material Name="PolyartMat"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/ModularRPGHeroesPolyart/Textures/PolyArtTex.PolyArtTex"'
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=F6AE4EE64AA424991650E396874140BB
+      Material=Material'"PolyartMat"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=F3E45F2B49C573B465223F807744F12F
+      Material=Material'"PolyartMat"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=1.000000
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=8CB5DABE4497F9E42171E1A8FC604088
+      Material=Material'"PolyartMat"'
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_1"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   bUsedWithSkeletalMesh=True
+   bUsedWithStaticLighting=True
+   EditorX=80
+   EditorY=80
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(2)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=4D09474D49BEE961458D9FA8D4AFB70A
+   ReferencedTextureGuids(0)=84FC5C1E474E540102FD58B77CE4860D
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=96166C7C45CC9E671C99938EE2438290
+End Object

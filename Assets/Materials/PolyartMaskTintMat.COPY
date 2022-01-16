@@ -1,0 +1,229 @@
+Begin Object Class=/Script/Engine.Material Name="PolyartMaskTintMat"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMin Name="MaterialExpressionMin_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMin Name="MaterialExpressionMin_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMin Name="MaterialExpressionMin_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_9"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_9"',OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_9"',OutputIndex=2,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-1104
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=BFB10D0945DB35B6093CD6A54F33FF42
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionAdd'"PolyartMaskTintMat:MaterialExpressionAdd_0"')
+      B=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_9"',OutputIndex=3,Mask=1,MaskB=1)
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=-192
+      MaterialExpressionGuid=F3CEBBC648740B7A2F552BB2F1A2B8EC
+      Material=Material'"PolyartMaskTintMat"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionAdd_2"
+      A=(Expression=MaterialExpressionMin'"PolyartMaskTintMat:MaterialExpressionMin_0"')
+      B=(Expression=MaterialExpressionMin'"PolyartMaskTintMat:MaterialExpressionMin_1"')
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=FFAEBB74403B6CB1F61BD5B3BD72662F
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_3"
+      A=(Expression=MaterialExpressionAdd'"PolyartMaskTintMat:MaterialExpressionAdd_2"')
+      B=(Expression=MaterialExpressionMin'"PolyartMaskTintMat:MaterialExpressionMin_2"')
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=240BAA1A4A8CEF9BB82AF8BEB4439BED
+      Material=Material'"PolyartMaskTintMat"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=2.000000
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=9190DCC945D205766F9C179D700E0F06
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=0.700000
+      MaterialExpressionEditorX=-80
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=49DF23734CFF070D3BC5FDB4FF9B7B82
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2"
+      R=0.500000
+      MaterialExpressionEditorX=-90
+      MaterialExpressionEditorY=134
+      MaterialExpressionGuid=D5BB9C97452C47998A98E4B1329F7A39
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"PolyartMaskTintMat:MaterialExpressionMultiply_2"')
+      Alpha=(Expression=MaterialExpressionAdd'"PolyartMaskTintMat:MaterialExpressionAdd_1"')
+      MaterialExpressionEditorX=-224
+      MaterialExpressionEditorY=-272
+      MaterialExpressionGuid=075249F34AAA76225FA1469186E9A91C
+      Material=Material'"PolyartMaskTintMat"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.Blend_Overlay"'
+      FunctionInputs(0)=(ExpressionInputId=88817477432D9FAD10A549A321ACA1A3,Input=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_4"',InputName="Base",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+      FunctionInputs(1)=(ExpressionInputId=199F573E4F017F639BE3529FE8C8D580,Input=(Expression=MaterialExpressionAdd'"PolyartMaskTintMat:MaterialExpressionAdd_3"',InputName="Blend"))
+      FunctionOutputs(0)=(ExpressionOutputId=C17FADFB4135A52E64E751901D7BE521,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-480
+      MaterialExpressionEditorY=-48
+      MaterialExpressionGuid=99D7773144321904A7C34598A8470F5B
+      Material=Material'"PolyartMaskTintMat"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMin_0"
+      A=(Expression=MaterialExpressionVectorParameter'"PolyartMaskTintMat:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_9"',OutputIndex=1,Mask=1,MaskR=1)
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=B88EC3EC4562EB6D108108A505962292
+      Material=Material'"PolyartMaskTintMat"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionMin_1"
+      A=(Expression=MaterialExpressionVectorParameter'"PolyartMaskTintMat:MaterialExpressionVectorParameter_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_9"',OutputIndex=2,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-1008
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=F9DC15C34734533103E132BF5271A1D9
+      Material=Material'"PolyartMaskTintMat"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionMin_2"
+      A=(Expression=MaterialExpressionVectorParameter'"PolyartMaskTintMat:MaterialExpressionVectorParameter_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionTextureSample'"PolyartMaskTintMat:MaterialExpressionTextureSample_9"',OutputIndex=3,Mask=1,MaskB=1)
+      MaterialExpressionEditorX=-1008
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=A4080CC144CB9335313DDB9D80FF1D38
+      Material=Material'"PolyartMaskTintMat"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'"PolyartMaskTintMat:MaterialExpressionMaterialFunctionCall_0"')
+      B=(Expression=MaterialExpressionConstant'"PolyartMaskTintMat:MaterialExpressionConstant_0"')
+      MaterialExpressionEditorX=-288
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=7F0709D340D0A07A55BBEFB812982950
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Texture=Texture2D'"/Game/ModularRPGHeroesPolyart/Textures/PolyArtMaskBaseTex.PolyArtMaskBaseTex"'
+      MaterialExpressionEditorX=-992
+      MaterialExpressionEditorY=-464
+      MaterialExpressionGuid=0D92867A465393595FC2949F768FFE70
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_9"
+      Texture=Texture2D'"/Game/ModularRPGHeroesPolyart/Textures/MaskTex.MaskTex"'
+      MaterialExpressionEditorX=-1296
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=8CC1A696486483016BC4CEB89D7445B8
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.069528,G=0.310000,B=0.000000,A=1.000000)
+      ParameterName="Color01"
+      ExpressionGUID=2E9F14154F5C98471604EF81E10D937B
+      MaterialExpressionEditorX=-1328
+      MaterialExpressionEditorY=-32
+      MaterialExpressionGuid=F13BD2D844F9224B6FC8CB86D86542FB
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.970000,G=0.508112,B=0.000000,A=1.000000)
+      ParameterName="Color02"
+      ExpressionGUID=04E7CD4240525933BED78D8E19114CC7
+      MaterialExpressionEditorX=-1312
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=86AE3EF0413F1825F44C7A90624CF5D1
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2"
+      DefaultValue=(R=0.500000,G=0.038499,B=0.000000,A=1.000000)
+      ParameterName="Color03"
+      ExpressionGUID=3DAF711643A13D28AA4A85A5B41CA970
+      MaterialExpressionEditorX=-1312
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=34EAA3EB4B6714BCA5A44085B8B40A7E
+      Material=Material'"PolyartMaskTintMat"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"')
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_2"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_1"')
+   Normal=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   AmbientOcclusion=(OutputIndex=2,Mask=1,MaskG=1)
+   bUsedWithSkeletalMesh=True
+   bUsedWithStaticLighting=True
+   EditorX=192
+   EditorY=-48
+   Expressions(0)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_2"'
+   Expressions(2)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(3)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"'
+   Expressions(4)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_9"'
+   Expressions(5)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(6)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_1"'
+   Expressions(7)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_2"'
+   Expressions(8)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(9)=MaterialExpressionAdd'"MaterialExpressionAdd_1"'
+   Expressions(10)=MaterialExpressionMin'"MaterialExpressionMin_0"'
+   Expressions(11)=MaterialExpressionMin'"MaterialExpressionMin_1"'
+   Expressions(12)=MaterialExpressionMin'"MaterialExpressionMin_2"'
+   Expressions(13)=MaterialExpressionAdd'"MaterialExpressionAdd_2"'
+   Expressions(14)=MaterialExpressionAdd'"MaterialExpressionAdd_3"'
+   Expressions(15)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(16)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(17)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   MaterialFunctionInfos(0)=(StateId=12B6F73F4D5D4FF9D2FBF18B43945D5B,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.Blend_Overlay"')
+   bCanMaskedBeAssumedOpaque=True
+   StateId=77B7A4394AFC2CB3C8CEF3B27A3ACADB
+   ReferencedTextureGuids(0)=D28A457F42E2F2A9521AE7A31E732902
+   ReferencedTextureGuids(1)=07738C0941F81F1A28CA18B4A230E2BB
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=4A14FC4344A3B9E29112C08999E2AD8B
+End Object
